@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedesk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+  <h1>Pokedesk</h1>
+  <input type="text" v-model="pokemonName" placeholder="Digite o nome do Pokémon">
+  <button @click="searchPokemon" id="btn1">Pesquisar</button>
+  <div id="card" v-if="pokemon">
+    <h2>{{ pokemon.name }}</h2>
+    <img :src="pokemon.imageUrl" :alt="pokemon.name">
+    <p>Tipo: {{ pokemon.type }}</p>
+    <p>Habilidades: {{ pokemon.abilities.join(', ') }}</p>
+  </div>
+</div>
+</body>
+<script src="script.js""></script>
+<footer>&copy;Desenvolvido por Rudiberto Dias Assis</footer>
+</html>

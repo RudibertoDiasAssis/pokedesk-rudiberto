@@ -1,0 +1,83 @@
+body {
+    background-image:url(img/background_pokemonjpg.jpg);
+    height: 500px;
+    background-position:center;
+    background-size:cover;
+    font-size: 0.7em;
+    font-family: 'Press Start 2P', cursive;
+    color: gold;
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px gold solid;
+    text-decoration: none;
+  }
+  button:hover{
+    background-color: gold;
+    transition-delay: 0.2s;
+  }
+  input:hover{
+    background-color: rgba(219, 202, 105, 0.986);
+    color: black;
+    transition-delay: 0.2s;
+  }
+
+  button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 2px gold solid;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 200px;
+    margin-top: 5px;
+  }
+  #app {
+    margin: auto 0;
+    text-align: center;
+  }
+  #app h1 {
+text-align: left;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+  #card {
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px gold solid;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    height: 230px;
+    width: 410px;
+  }
+  #card:hover {
+    padding-top: 50px;
+    height:280px;
+    width: 420px; 
+    transition-delay: 0.5s;
+  }
+  #card img{
+    height: 100px;
+  }
+  
+  #card p{
+    margin-top: 5px;
+    padding: 3px;
+  }
+  footer{
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: black;
+  }
+
